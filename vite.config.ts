@@ -1,4 +1,3 @@
-import fs from "fs";
 import 'dotenv/config';
 import { defineConfig } from "vite";
 import { getMaps, getMapsOptimizers, getMapsScripts, LogLevel, OptimizeOptions } from "wa-map-optimizer-vite";
@@ -22,6 +21,8 @@ if (process.env.TILESET_OPTIMIZATION && process.env.TILESET_OPTIMIZATION === "tr
     }
 }
 
+const isLocal = process.env.NODE_ENV !== "production";
+
 export default defineConfig({
     base: "./",
     build: {
@@ -36,10 +37,12 @@ export default defineConfig({
     plugins: [...getMapsOptimizers(maps, optimizerOptions)],
     server: {
         host: "localhost",
-        https: {
-            key: fs.readFileSync("localhost-key.pem"),
-            cert: fs.readFileSync("localhost.pem"),
-    },
+        ...(isLocal ? {
+            https: {
+                key: "./localhost-key.pem",
+                cert: "./localhost.pem",
+            }
+        } : {}),
         headers: {
             "Access-Control-Allow-Origin": "*",
             "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, PATCH, OPTIONS",
