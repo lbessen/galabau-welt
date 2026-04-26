@@ -630,7 +630,7 @@
         {
          "name":"script",
          "type":"string",
-         "value":".\/scripts\/begruesser.ts"
+         "value":".\/begruesser.ts"
         }],
  "renderorder":"right-down",
  "tiledversion":"1.11.2",
