@@ -388,7 +388,18 @@
          "draworder":"topdown",
          "id":2,
          "name":"floorLayer",
-         "objects":[],
+         "objects":[
+                {
+                 "height":32,
+                 "id":48,
+                 "name":"begruesser",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":256,
+                 "y":480
+                }],
          "opacity":1,
          "type":"objectgroup",
          "visible":true,
@@ -432,17 +443,6 @@
                  "width":0,
                  "x":256,
                  "y":640
-                }, 
-                {
-                 "height":32,
-                 "id":45,
-                 "name":"begruesser",
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":32,
-                 "x":256,
-                 "y":480
                 }, 
                 {
                  "height":32,
@@ -569,7 +569,7 @@
          "y":0
         }],
  "nextlayerid":82,
- "nextobjectid":48,
+ "nextobjectid":49,
  "orientation":"orthogonal",
  "properties":[
         {
