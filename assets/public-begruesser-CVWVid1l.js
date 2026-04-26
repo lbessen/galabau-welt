@@ -1,2 +1,0 @@
-WA.onInit().then(()=>{WA.room.area.onEnter("begruesser").subscribe(()=>{WA.ui.actionBar.addButton({id:"begruesser-button",label:"Ansprechen",callback:()=>{WA.chat.sendChatMessage("Willkommen in der GaLaBau Welt. Hier lernst du alles über den Ausbildungsberuf des Landschaftsgärtners. Schau dich gern um!","Begrüßer")}})}),WA.room.area.onLeave("begruesser").subscribe(()=>{WA.ui.actionBar.removeButton("begruesser-button")})}).catch(e=>console.error(e));
-//# sourceMappingURL=public-begruesser-CVWVid1l.js.map
