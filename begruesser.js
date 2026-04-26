@@ -1,3 +1,4 @@
+console.log("begruesser.js wird ausgeführt!");
 WA.onInit().then(() => {
 
     WA.room.area.onEnter("begruesser").subscribe(() => {
