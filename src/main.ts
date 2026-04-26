@@ -1,7 +1,7 @@
 /// <reference types="@workadventure/iframe-api-typings" />
 
 import { bootstrapExtra } from "@workadventure/scripting-api-extra";
-import "./scripts/begruesser";
+import "./begruesser";
 
 WA.onInit().then(() => {
 
