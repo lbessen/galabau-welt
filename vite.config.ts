@@ -8,7 +8,7 @@ const isLocal = process.env.NODE_ENV !== "production";
 
 export default defineConfig({
     base: "./",
-    build: {
+build: {
         sourcemap: true,
         rollupOptions: {
             input: {
@@ -17,6 +17,7 @@ export default defineConfig({
             },
         },
     },
+    publicDir: "public",
     plugins: [],
     server: {
         host: "localhost",
