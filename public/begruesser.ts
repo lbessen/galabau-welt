@@ -1,3 +1,5 @@
+/// <reference types="@workadventure/iframe-api-typings" />
+
 WA.onInit().then(() => {
 
     WA.room.area.onEnter("begruesser").subscribe(() => {
@@ -17,4 +19,6 @@ WA.onInit().then(() => {
         WA.ui.actionBar.removeButton("begruesser-button");
     });
 
-});
+}).catch(e => console.error(e));
+
+export {};

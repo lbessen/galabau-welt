@@ -436,7 +436,7 @@
                 {
                  "height":32,
                  "id":45,
-                 "name":"begruesser",
+                 "name":"npc_begruesser",
                  "rotation":0,
                  "type":"",
                  "visible":true,
