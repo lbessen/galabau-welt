@@ -390,69 +390,14 @@
          "name":"floorLayer",
          "objects":[
                 {
-                 "height":32,
+                 "height":64,
                  "id":48,
                  "name":"begruesser",
                  "rotation":0,
                  "type":"",
                  "visible":true,
-                 "width":32,
-                 "x":256,
-                 "y":480
-                }],
-         "opacity":1,
-         "type":"objectgroup",
-         "visible":true,
-         "x":0,
-         "y":0
-        }, 
-        {
-         "draworder":"topdown",
-         "id":81,
-         "name":"npc",
-         "objects":[
-                {
-                 "height":32,
-                 "id":41,
-                 "name":"",
-                 "properties":[
-                        {
-                         "name":"openWebsite",
-                         "type":"string",
-                         "value":"Dialog.html"
-                        }, 
-                        {
-                         "name":"openWebsiteTrigger",
-                         "type":"string",
-                         "value":"onaction"
-                        }],
-                 "rotation":0,
-                 "type":"area",
-                 "visible":true,
                  "width":64,
-                 "x":128,
-                 "y":544
-                }, 
-                {
-                 "height":0,
-                 "id":42,
-                 "name":"",
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":0,
                  "x":256,
-                 "y":640
-                }, 
-                {
-                 "height":32,
-                 "id":47,
-                 "name":"",
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":32,
-                 "x":160,
                  "y":480
                 }],
          "opacity":1,
