@@ -6,6 +6,15 @@ var waitForWA = setInterval(function() {
         clearInterval(waitForWA);
         WA.onInit().then(function() {
             console.log("WA.onInit fertig!");
+            WA.onInit().then(function() {
+    console.log("WA.onInit fertig!");
+    
+    // Teste ob die Zone existiert
+    console.log("Versuche Zone zu abonnieren...");
+    
+    WA.room.area.onEnter("begruesser").subscribe(function() {
+        console.log("Zone betreten!");
+        WA.ui.actionBar.addButton({
 
             WA.room.area.onEnter("begruesser").subscribe(function() {
                 WA.ui.actionBar.addButton({
