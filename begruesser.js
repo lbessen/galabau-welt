@@ -1,13 +1,14 @@
 console.log("begruesser.js wird ausgeführt!");
 
-// Warte bis WA bereit ist
 var waitForWA = setInterval(function() {
     if (typeof WA !== 'undefined' && WA.onInit) {
         clearInterval(waitForWA);
         WA.onInit().then(function() {
             console.log("WA.onInit fertig!");
+            console.log("Versuche Zone zu abonnieren...");
 
             WA.room.area.onEnter("begruesser").subscribe(function() {
+                console.log("Zone betreten!");
                 WA.ui.actionBar.addButton({
                     id: "begruesser-button",
                     label: "Ansprechen",
